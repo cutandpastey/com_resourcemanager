@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="2.5.5.2" method="upgrade">
+    <name>ResourceManager</name>
+    <creationDate>February 2013</creationDate>
+    <author>Sam Coult, Jon Parsons</author>
+    <version>2.5.0</version>
+    <description>Resource Manager for Joomla</description>
+    <scriptfile>script.php</scriptfile>
+    <install> <!-- Runs on install -->
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+    </uninstall>
+    <update>
+    </update>
+    <files folder="site">
+        <filename>index.html</filename>
+    </files>
+    <media destination="com_resourcemanager" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+    
+    <administration>
+        <menu img="../media/com_resourcemanager/images/resourcemanager_16.png">Resource Manager</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>resourcemanager.php</filename>
+            <filename>controller.php</filename>
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+        </files>
+    </administration>
+    
+</extension>
